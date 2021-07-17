@@ -1,0 +1,33 @@
+.button {
+  border-radius: 20px;
+  display: inline-block;
+  text-align: center;
+  border: 0;
+  padding: 11px 20px;
+  min-width: 104px;
+
+  color: $background_text_active;
+  background-color: $background_text;
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.286;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: $background_hover_first;
+  }
+}
+
+.button--red {
+  color: $background_text;
+  background-color: $background_text_active;
+
+  &:focus,
+  &:hover {
+    background-color: $background_hover_second;
+  }
+}
