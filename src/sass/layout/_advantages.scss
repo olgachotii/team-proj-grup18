@@ -48,7 +48,7 @@
      width: 33px;
      height: 50px;
      margin-bottom: 16px;
-     background-image: url(./images/adventage-icon1.png)
+     background-image: url("./images/adventage-icon1.png")
      
  }
  .second::before {
@@ -57,7 +57,7 @@
      width: 50px;
      height: 50px;
      margin-bottom: 16px;
-     background-image: url(./images/adventage-icon2.png)
+     background-image: url("./images/adventage-icon2.png")
  }
  .third::before {
      content: "";
@@ -65,5 +65,5 @@
      width: 44px;
      height: 50px;
      margin-bottom: 16px;
-     background-image: url(./images/adventage-icon3.png)
+     background-image: url("./images/adventage-icon3.png")
  }
