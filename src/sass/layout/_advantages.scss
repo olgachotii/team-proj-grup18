@@ -1,8 +1,9 @@
 .advantages{
     padding: 0;
     margin: 0;
-    padding-top: 39px;
-    background-color:rgb(247, 239, 240);
+    padding-top: 20px;
+    $background_advantages: #fff5f6;
+    
     
     width: 100%;
     &__container{
@@ -27,8 +28,9 @@
                line-height: 41px;
                 line-height: 1 ;
                 letter-spacing: 0.04;
+                $advantages_text: #000000;
                 margin-bottom: 13px;
-                color:rgba(212, 20, 67, 1);
+                
                 }
      &__signature {
          font-family: DM Sans;
@@ -36,10 +38,7 @@
          font-weight: bold;
          font-size: 12px;
          line-height: 170%;
-         /* or 20px */
-
-
-         color: #000000;
+         $advantages_text: #000000;
      }
                 
         }
@@ -49,7 +48,8 @@
      width: 33px;
      height: 50px;
      margin-bottom: 16px;
-     background-image: url(../)
+     background-image: url(./images/adventage-icon1.png)
+     
  }
  .second::before {
      content: "";
@@ -57,7 +57,7 @@
      width: 50px;
      height: 50px;
      margin-bottom: 16px;
-     background-image: url(../images/icon2-min.png)
+     background-image: url(./images/adventage-icon2.png)
  }
  .third::before {
      content: "";
@@ -65,5 +65,5 @@
      width: 44px;
      height: 50px;
      margin-bottom: 16px;
-     background-image: url(../images/icon3-min.png)
+     background-image: url(./images/adventage-icon3.png)
  }
