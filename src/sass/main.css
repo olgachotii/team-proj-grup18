@@ -231,7 +231,7 @@ button {
   width: 33px;
   height: 50px;
   margin-bottom: 16px;
-  background-image: url("./images/adventage-icon1.png");
+  background-image: url("./images/icon1-min.png");
 }
 
 .second::before {
@@ -240,7 +240,7 @@ button {
   width: 50px;
   height: 50px;
   margin-bottom: 16px;
-  background-image: url("./images/adventage-icon2.png");
+  background-image: url("./images/icon2-min.png");
 }
 
 .third::before {
@@ -249,6 +249,6 @@ button {
   width: 44px;
   height: 50px;
   margin-bottom: 16px;
-  background-image: url("./images/adventage-icon3.png");
+  background-image: url("./images/icon3-min.png");
 }
 /*# sourceMappingURL=main.css.map */
