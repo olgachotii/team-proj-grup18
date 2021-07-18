@@ -1,0 +1,56 @@
+.hero-header {
+  padding-top: 6px;
+  height: 502px;
+  background-color: $background_header_section;
+
+  background-image: 
+    // url("data:image/svg+xml;charset=UTF-8,%3csvg width='13' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='6.395' cy='6' r='6' fill='%23FFA5BA'/%3e%3c/svg%3e");
+    url(../images/compr480/ice-burger-1x-min.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 117px bottom, 32px top;
+  background-size: 171px, 346px;
+
+  &__title {
+    margin-bottom: 19px;
+
+    color: $background_text;
+    font-size: 26px;
+    line-height: 1.154;
+    text-align: start;
+  }
+  &__title--red {
+    color: $background_text_active;
+    font-size: 48px;
+    line-height: 96.5%;
+  }
+  &__list-button {
+    display: flex;
+  }
+}
+
+.hero-header__item + .hero-header__item {
+  margin-left: 8px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 137px;
+}
+
+.mobail-menu__button {
+  display: inline-block;
+  text-align: center;
+  border: 0;
+  padding: 4px 0;
+  min-width: 20px;
+
+  background-color: transparent;
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.286;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
