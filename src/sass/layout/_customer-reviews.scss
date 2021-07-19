@@ -1,1 +1,87 @@
+.customer-reviews {
+  padding-top: 80px;
 
+  &__photo {
+    margin: 0 auto 29px;
+  }
+
+  &__comment {
+    position: relative;
+    padding: 43px 50px 20px;
+    z-index: -2;
+
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+
+    text-align: center;
+
+    color: #000000;
+    background-color: #fafafa;
+
+    &::before {
+      position: absolute;
+      top: 28px;
+      left: 61px;
+      z-index: -1;
+      content: '';
+      display: inline-block;
+      width: 54px;
+      height: 40px;
+
+      background-image: url('../images/icon-comma.svg');
+    }
+
+    & p {
+      background-image: repeating-linear-gradient(
+        to top,
+        transparent 0px,
+        transparent 30px,
+        #e1e1e1 30px,
+        transparent 31px
+      );
+    }
+  }
+
+  &__user {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+    text-align: center;
+
+    &::before {
+      content: '...';
+      display: block;
+      margin-top: 18px;
+      margin-bottom: 18px;
+
+      font-size: 38px;
+      letter-spacing: 0.2em;
+
+      color: #c7133e;
+    }
+  }
+
+  &__group-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    & > li {
+      fill: #d31342;
+    }
+
+    & > li:not(:first-child) {
+      margin-left: 18px;
+      fill: #d9d9d9;
+    }
+  }
+
+  &__icon {
+    width: 12px;
+    height: 12px;
+    fill: inherit;
+  }
+}
