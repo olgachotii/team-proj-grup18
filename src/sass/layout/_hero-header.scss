@@ -3,13 +3,6 @@
   height: 502px;
   background-color: $background_header_section;
 
-  background-image: 
-    // url("data:image/svg+xml;charset=UTF-8,%3csvg width='13' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='6.395' cy='6' r='6' fill='%23FFA5BA'/%3e%3c/svg%3e");
-    url(../images/compr480/ice-burger-1x-min.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: 117px bottom, 32px top;
-  background-size: 171px, 346px;
-
   &__title {
     margin-bottom: 19px;
 
@@ -25,6 +18,42 @@
   }
   &__list-button {
     display: flex;
+  }
+}
+
+.hero-header__container {
+  position: relative;
+  z-index: 0;
+  height: 100%;
+  overflow: hidden;
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    right: -19%;
+    bottom: 69px;
+    z-index: -1;
+    width: 346px;
+    height: 346px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='13' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='6.395' cy='6' r='6' fill='%23FFA5BA'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+
+    background-size: 346px;
+  }
+  &::after {
+    content: '';
+    display: inline-block;
+
+    position: absolute;
+    z-index: -1;
+    right: 10%;
+    bottom: 0;
+    width: 171px;
+    height: 410px;
+    background-image: url(../images/compr480/ice-burger-1x-min.png);
+    background-repeat: no-repeat;
+
+    background-size: 171px;
   }
 }
 
