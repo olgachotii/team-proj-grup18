@@ -1,14 +1,11 @@
 .contacts {
-  // background-color: #fff5f6;
-  background-image: linear-gradient(to bottom, #ffffff 5.7%, #fff5f6 5.7%);
+  padding-top: 86px;
+
+  background-image: linear-gradient(to bottom, #ffffff 10.6%, #fff5f6 10.6%);
 
   & .container {
     padding-left: 50px;
     padding-right: 50px;
-  }
-
-  &__title {
-    display: none;
   }
 
   &__cards {
