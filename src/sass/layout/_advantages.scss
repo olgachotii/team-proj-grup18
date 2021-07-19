@@ -1,17 +1,18 @@
 .advantages {
-  padding: 0;
-  margin: 0;
+  padding: 0 auto;
+  margin: 0 auto;
   padding-top: 20px;
-  $background_advantages: #fff5f6;
+  background-color: #fff5f6;
 
   width: 100%;
-  &__container {
-    width: 480px;
-
-    padding-left: 20px;
+  &__container{
+  @media screen and (min-width: 480px) {
+    width: 480px;}
+ 
   }
   &__list {
     list-style: none;
+    margin: 0 auto;
   }
   &__item {
     width: 230px;
@@ -28,7 +29,7 @@
     line-height: 41px;
     line-height: 1;
     letter-spacing: 0.04;
-    $advantages_text: #000000;
+    color: #d41443;
     margin-bottom: 13px;
   }
   &__signature {
@@ -37,7 +38,7 @@
     font-weight: bold;
     font-size: 12px;
     line-height: 170%;
-    $advantages_text: #000000;
+    color: #000;
   }
 }
 .first::before {
