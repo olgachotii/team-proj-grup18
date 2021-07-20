@@ -58,10 +58,12 @@
   color: $products_header_text;
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 158px;
     font-size: 48px;
   }
 
   @media screen and (min-width: 1280px) {
+    margin-bottom: 269px;
     font-size: 58px;
     line-height: 1.13;
   }
@@ -101,41 +103,46 @@
   padding-right: 39px;
   padding-bottom: 41px;
   margin: 0 auto;
-  max-width: 280px;
+  min-width: 280px;
   border-radius: 24px;
   &--pink {
     background-color: $background_ice_cream;
     &::before {
       content: '';
       display: block;
+
       width: 249px;
       height: 252px;
       position: absolute;
       top: -110px;
       left: 18px;
 
+      background: url('../images/compr480/ice-cream-1x-min.png');
       background-repeat: no-repeat;
       background-position: center;
-      background: url('../images/compr480/ice-cream-1x-min.png');
 
       @media screen and (min-width: 768px) {
         top: -115px;
         left: 15px;
         min-height: 226px;
         max-width: 220px;
+
+        background: url('../images/compr768/ice-cream-1x-min.png');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
       }
 
       @media screen and (min-width: 1280px) {
-        top: -155px;
-        left: 190px;
+        top: -205px;
+        left: 95px;
         min-height: 335px;
-        max-width: 335px;
+        min-width: 335px;
+
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+        background: url('../images/compr1280/ice-cream-1x-min.png');
       }
     }
   }
@@ -150,9 +157,9 @@
       top: 520px;
       left: 18px;
 
+      background: url('../images/compr480/ice-coffee-1x-min.png');
       background-repeat: no-repeat;
       background-position: center;
-      background: url('../images/compr480/ice-coffee-1x-min.png');
 
       @media screen and (min-width: 768px) {
         top: -115px;
@@ -160,15 +167,20 @@
         min-height: 233px;
         max-width: 220px;
         background-size: 220px 233px;
+
+        background: url('../images/compr768/ice-coffee-1x-min.png');
+        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
       }
 
       @media screen and (min-width: 1280px) {
-        top: -155px;
-        left: 500px;
+        top: -205px;
+        left: 455px;
         min-height: 335px;
-        max-width: 335px;
+        min-width: 335px;
+
+        background: url('../images/compr1280/ice-coffee-1x-min.png');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -186,24 +198,28 @@
       top: 1160px;
       left: 18px;
 
+      background: url('../images/compr480/milkshakes-1x-min.png');
       background-repeat: no-repeat;
       background-position: center;
-      background: url('../images/compr480/milkshakes-1x-min.png');
 
       @media screen and (min-width: 768px) {
         top: -115px;
         left: 495px;
         min-height: 224px;
         max-width: 220px;
-        background-size: 220px 224px;
+
+        background: url('../images/compr768/milkshakes-1x-min.png');
+        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
 
         @media screen and (min-width: 1280px) {
-          top: -155px;
-          left: 807px;
+          top: -205px;
+          left: 817px;
           min-height: 335px;
-          max-width: 335px;
+          min-width: 335px;
+
+          background: url('../images/compr1280/milkshakes-1x-min.png');
           background-size: contain;
           background-position: center;
           background-repeat: no-repeat;
@@ -214,7 +230,7 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 157px;
-    width: 220px;
+    min-width: 220px;
     margin: 0;
     padding-left: 11px;
     padding-right: 11px;
@@ -222,7 +238,7 @@
 
   @media screen and (min-width: 1280px) {
     padding-top: 171px;
-    width: 335px;
+    min-width: 335px;
     margin: 0;
     padding-left: 44px;
     padding-right: 44px;
@@ -268,6 +284,10 @@
   }
 
   @media screen and (min-width: 1280px) {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 241px;
     font-size: 16px;
     line-height: 176%;
   }
