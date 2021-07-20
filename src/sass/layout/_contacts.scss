@@ -1,15 +1,60 @@
 .contacts {
   padding-top: 86px;
-
   background-image: linear-gradient(to bottom, #ffffff 10.6%, #fff5f6 10.6%);
 
-  & .container {
-    padding-left: 50px;
-    padding-right: 50px;
+  @media screen and (min-width: 768px) {
+    padding-top: 119px;
+    background-image: linear-gradient(to bottom, #ffffff 26.5%, #fff5f6 26.5%);
   }
 
-  &__cards {
+  @media screen and (min-width: 1280px) {
+    padding-top: 132px;
+
+    background-image: url(./../images/compr1280/contacts-fone-min.png),
+      linear-gradient(to bottom, #ffffff 26.5%, #fff5f6 26.5%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0% 50%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(./../images/compr1280/contacts-fone-2x-min.png),
+        linear-gradient(to bottom, #ffffff 26.5%, #fff5f6 26.5%);
+    }
+  }
+
+  &__container {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-left: 115px;
+      padding-right: 115px;
+    }
+  }
+
+  &__cards-list {
     margin-bottom: 54px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin-left: -20px;
+      margin-bottom: 81px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-left: -30px;
+      margin-bottom: 86px;
+    }
   }
 
   &__card {
@@ -19,8 +64,23 @@
 
     background-color: #ffffff;
 
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 60px) / 3);
+
+      margin-left: 20px;
+      padding: 50px 31px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      flex-basis: calc((100% - 90px) / 3);
+
+      margin-left: 30px;
+    }
+
     &:not(:last-child) {
-      margin-bottom: 20px;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -28,11 +88,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin-bottom: 25px;
 
     font-family: DM Sans;
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 186%;
@@ -43,16 +101,30 @@
 
     color: #ffffff;
 
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
     &--cafe {
       width: 80px;
       height: 16px;
       background-color: #f0d1a5;
+
+      @media screen and (min-width: 768px) {
+        width: 73px;
+        height: 28px;
+      }
     }
 
     &--foodtruck {
       width: 130px;
       height: 16px;
       background-color: #c2e297;
+      @media screen and (min-width: 768px) {
+        width: 138px;
+        height: 28px;
+      }
     }
   }
 
@@ -67,10 +139,17 @@
     letter-spacing: 0.04em;
 
     color: #000000;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
   }
 
   &__description {
-    padding-bottom: 25px;
+    margin-bottom: 25px;
 
     font-family: DM Sans;
     font-style: normal;
@@ -78,65 +157,129 @@
     font-size: 12px;
     line-height: 150%;
 
-    border-bottom: 1px solid #e1e1e1;
-
     color: #907e82;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 32px;
+      font-size: 16px;
+    }
   }
 
   &__timetable {
-    margin-top: 25px;
     padding-bottom: 25px;
+    padding-top: 25px;
 
     border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
 
     & li:first-child {
       margin-bottom: 10px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 16px;
+      }
     }
   }
 
   &__day {
     font-family: DM Sans;
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 186%;
 
     color: #000000;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
   }
 
   &__time {
     font-family: DM Sans;
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 186%;
 
     color: #ffa5ba;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
   }
 
   &__list {
     margin-top: 25px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-top: 32px;
+    }
   }
 
   &__link {
     font-family: DM Sans;
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 150%;
 
     color: #907e82;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
+  }
+
+  &__buttons {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__buttons li:first-child {
-    margin-bottom: 10px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-right: 15px;
+    }
   }
 }
 
 .contacts-button {
   display: flex;
   align-items: center;
-
   margin: 0 auto;
 
   font-weight: bold;
