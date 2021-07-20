@@ -1,8 +1,30 @@
 .customer-reviews {
   padding-top: 80px;
 
+  @media screen and (min-width: 768px) {
+    padding-top: 121px;
+  }
+
+  &__container {
+    @media screen and (min-width: 768px) {
+      padding: 0 74px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding: 0 177px;
+    }
+  }
+
   &__photo {
     margin: 0 auto 29px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 19px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__comment {
@@ -10,14 +32,6 @@
     padding: 43px 50px 20px;
     z-index: -2;
 
-    font-family: DM Sans;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 255%;
-
-    text-align: center;
-
-    color: #000000;
     background-color: #fafafa;
 
     &::before {
@@ -33,7 +47,14 @@
       background-image: url('../images/icon-comma.svg');
     }
 
-    & p {
+    & > p {
+      font-family: DM Sans;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 255%;
+      text-align: center;
+
+      color: #000000;
       background-image: repeating-linear-gradient(
         to top,
         transparent 0px,
@@ -41,6 +62,14 @@
         #e1e1e1 30px,
         transparent 31px
       );
+
+      @media screen and (min-width: 768px) {
+        font-size: 14px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -50,6 +79,14 @@
     font-size: 14px;
     line-height: 186%;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 20px;
+    }
 
     &::before {
       content: '...';
@@ -61,6 +98,16 @@
       letter-spacing: 0.2em;
 
       color: #c7133e;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 24px;
+        margin-bottom: 14px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
     }
   }
 
@@ -68,6 +115,10 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 35px;
+    }
 
     & > li {
       fill: #d31342;
