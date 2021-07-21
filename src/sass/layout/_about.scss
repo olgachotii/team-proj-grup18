@@ -1,3 +1,15 @@
+.container--about {
+    @media screen and (min-width: 768px) {
+        padding-left: 39px;
+        padding-right: 36px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-left: 112px;
+        padding-right: 117px;
+    }
+}
+
 @media screen and (max-width: 767px) {
 .about {
     background-color: $background_about_section;
@@ -31,7 +43,7 @@
         background-image: url(./../images/compr1280/sectionbg1x-min.png);
         background-repeat: no-repeat;
         background-size: contain;
-        // background-position: 0% 91%;
+        background-position: 0% 112%;
         padding-top: 125px;
         padding-bottom: 20px;
     
@@ -55,6 +67,11 @@
         margin-bottom: 16px;
         font-size: 26px;
     }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
 }
 
 .about__title {
@@ -68,6 +85,12 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 50px;
         font-size: 48px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 58px;
+        letter-spacing: 0.06em;
+        margin-bottom: 55px;
     }
 }
 
@@ -102,6 +125,11 @@ margin-left: 35px;
     margin-left: 17px;
     padding-top: 50px;
 }
+
+@media screen and (min-width: 1280px) {
+    margin-left: 74px;
+    padding-top: 50px;
+}
 }
 
 
@@ -113,6 +141,10 @@ margin-left: 35px;
     @media screen and (mix-width: 768px) {
         font-size: 14px;
         line-height: 1.76;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
     }
   }
   
@@ -139,6 +171,18 @@ margin-left: 35px;
     
         &--second {
             margin-bottom: 62px;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        line-height: 1.94;
+
+        &--first {
+            margin-bottom: 25px;
+        }
+    
+        &--second {
+            margin-bottom: 45px;
         }
     }
   }
