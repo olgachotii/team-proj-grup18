@@ -48,6 +48,8 @@
     }
 
     & > p {
+      padding: 0 7px;
+
       font-family: DM Sans;
       font-weight: 500;
       font-size: 12px;
@@ -56,7 +58,7 @@
 
       color: #000000;
       background-image: repeating-linear-gradient(
-        to top,
+        to bottom,
         transparent 0px,
         transparent 30px,
         #e1e1e1 30px,
@@ -64,11 +66,33 @@
       );
 
       @media screen and (min-width: 768px) {
+        padding: 0 20px;
+
         font-size: 14px;
+        line-height: 216%;
+
+        background-image: repeating-linear-gradient(
+          to bottom,
+          transparent 0px,
+          transparent 29px,
+          #e1e1e1 29px,
+          transparent 30px
+        );
       }
 
       @media screen and (min-width: 1280px) {
+        padding: 0 28px;
+
         font-size: 16px;
+        line-height: 186%;
+
+        background-image: repeating-linear-gradient(
+          to bottom,
+          transparent 0px,
+          transparent 28px,
+          #e1e1e1 28px,
+          transparent 29px
+        );
       }
     }
   }

@@ -1,0 +1,15 @@
+.gallery {
+  background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
+
+  &__container {
+    padding: 0;
+  }
+
+  &__flex {
+    display: flex;
+  }
+
+  &__picture {
+    margin: 0 auto;
+  }
+}
