@@ -2,11 +2,27 @@
   background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
 
   &__container {
-    padding: 0;
+    @media screen and (min-width: 768px) {
+      padding: 0 24px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding: 0 115px;
+    }
   }
 
   &__flex {
     display: flex;
+    overflow: hidden;
+    margin-left: -20px;
+    margin-right: -20px;
+    @media screen and (min-width: 768px) {
+      margin-left: -24px;
+      margin-right: -24px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-left: -115px;
+      margin-right: -115px;
+    }
   }
 
   &__picture {
