@@ -1,0 +1,26 @@
+.hero-header__button,
+.products__button {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $background_hover_second;
+    .hero-header__icon,
+    .products__icon {
+      fill: $background_text;
+    }
+  }
+}
+
+// .products__button--rotate {
+//   position: fixed;
+//   right: 0;
+//   bottom: 0;
+//   z-index: 5;
+//   transform: rotateZ(270deg);
+
+//   background-color: $background_hover_second;
+//   .products__icon {
+//     fill: $background_text;
+//   }
+// }
